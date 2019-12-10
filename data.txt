@@ -1,4 +1,5 @@
 
+
 my first class
 
 -----Full stack development-----
@@ -21,3 +22,4 @@ class 2 - about GIT and GIThub.
           
           Work FLow of a version control system.
 
+sucessfully sychronised
