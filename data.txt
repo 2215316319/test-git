@@ -1,0 +1,23 @@
+
+my first class
+
+-----Full stack development-----
+
+class 1 - HTML basics and CSS 
+
+In HTML I learned about
+ tags like
+<P> , <a> , <img> , <table> , <ol> , <ul> .
+
+CSS: implemented about Inline CSS and External CSS
+ 
+Selectors : 1. id 
+            2. class
+
+about font-text , background color , text - align.
+
+
+class 2 - about GIT and GIThub.
+          
+          Work FLow of a version control system.
+
