@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+Username:<input id="txtUserName" placeholder="Enter name" pattern="^[a-z A-Z 0-9 _ .]{6,10}$" title="please enter user name"/><br/>
+Password:&nbsp&nbsp<input id="txtpassword" placeholder="Password" type="password" pattern=".{6,}" title="Six or more characters" /><br/>
+<button onclick="myFunction()">Submit</button>
+</form>
+<script>
+function myFunction() {
+   var x = document.getElementById("txtUserName");
+   var y = document.getElementById("txtpassword");
+   var pattern = RegExp("^[a-z A-Z 0-9 _ .]{6,10}$");
+   var patternpass = RegExp(".{6,}"); 
+   if(pattern.test(x.value))
+   {
+	 if(patternpass.test(y.value))
+		{
+		    alert("oh yeah");
+		}
+   }
+   else
+   {
+			alert("no");
+   }
+}
+</script>
+
+</body>
+</html>

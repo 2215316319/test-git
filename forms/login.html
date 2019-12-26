@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<title>LOGIN PAGE</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<style>
+h1{
+   text-align:center;
+   }
+.a1
+{
+	background-color:gold;
+	}
+	.col-md-12
+	{
+	   font-family: 'Ma Shan Zheng', cursive;
+	   text-align:center;
+	}
+	.table table-striped
+	{
+	  background-image:url("gitam.png");
+	}
+	</style>
+	</head>
+<body>
+<script>
+function myFunction() {
+   var x = document.getElementById("txtUserName");
+   var y = document.getElementById("txtpassword");
+   var pattern = RegExp("^[a-z A-Z 0-9 _ .]{6,10}$");
+   var patternpass = RegExp(".{6,}"); 
+   if(pattern.test(x.value))
+   {
+	 if(patternpass.test(y.value))
+		{
+		    alert("Valid");
+		}
+   }
+   else
+   {
+			alert("Not Valid");
+   }
+}
+</script>
+
+
+
+
+
+
+
+
+<h1>GITAM UNIVERSITY </h1>
+	<div class="container" style="margin:0px;width:1365px">
+		<div class="row a1">
+			<div class="col-md-4">
+			  <a href="https://www.gitam.edu/"> <img src="https://www.gitam.edu/assets/images/category-1.png" class="img-round"></a>
+			   
+			   <img src="https://www.gitam.edu/assets/images/naac-logo.png">
+			</div>
+			<div class="col-md-4">
+				<img src="https://www.gitam.edu/assets/images/GITAM-logo.png" width=333px>
+			</div>
+			<div class="col-md-4 a1">
+				<img src="https://www.gitam.edu/assets/images/aicte.png" style="margin-left:125px">
+				<img src="https://www.gitam.edu/assets/images/excellence.png">
+			</div>
+		</div>
+		
+			
+	    <div class="row">
+		    <div class="col-md-12">
+			<h1>LOGIN</h1>
+			<hr>
+			</div>
+			
+		</div>
+		<br/>
+		<div class="table table-striped" style="background-color:;">
+		    <tbody>
+			<form style="text-align:center">
+			    <tr>
+                     <td>Username&nbsp<input id="txtUserName" placeholder="Enter name" pattern="^[a-z A-Z 0-9 _ .]{6,10}" title="please enter user name"/></td>
+                </tr>
+				<br/>
+				<br/>
+				<tr>
+                     <td>Password:&nbsp&nbsp<input id="txtpassword" placeholder="Password" type="password" pattern=".{6,}" title="Six or more characters" /></td>
+                 </tr>
+				 <br/>
+				 <br/>
+				 <tr>
+                     <td colspan="2" style="text-align:center;"><button onclick = "myFunction()">Submit</button></td>
+					 <td colspan="2" style="text-align:center;"><button><a href="forgot.html">Forgot Password</a></button></td>
+                 </tr>
+				 
+				</tbody>
+			</form>
+</body>
+</html>

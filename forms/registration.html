@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+ <form action="/action_page.php">
+<div class="container">
+<table class="table table-striped">
+<tr>
+<thead>Registration Form</thead>
+</tr>
+<tbody>
+<tr>
+<td>Username:&nbsp<input id="txtUserName" placeholder="Enter name"/></td>
+</tr>
+<tr>
+<td>Address:&nbsp&nbsp&nbsp&nbsp<textarea type="text" max-length="50" placeholder="Adress" /></textarea></td>
+</tr>
+<tr>
+<td>Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input id="txtEmailID" placeholder="Email" type="mail" pattern="^[a-z A-Z 0-9 _ .]{6,15}[@][A-Z a-z]{5}[.][a-z]{2,3}$" title="enter correct email"/></td>
+</tr>
+<tr>
+<td>Password:&nbsp&nbsp<input id="txtpassword" placeholder="Password" type="password" /></td>
+</tr>
+<tr>
+    <td>Moblie:&nbsp&nbsp<input id="MoblieNum" placeholder="mobile" type="text" pattern="^[+][9][1][6-9][0-9]{9}$" title="enter valid one"/></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align:center;"><button>Submit</button></td>
+</tr>
+</tbody>
+</div>
+</form>
+</body>
+</html>
